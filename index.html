@@ -31,7 +31,6 @@
     
     <!-- 🪐 - Description (For SEO) - 🪐 -->  
         <!-- 🪐 - Description (For SEO) - 🪐 -->
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/24b38c7cb1.js" crossorigin="anonymous"></script>
@@ -435,21 +434,32 @@
       </div>
     </section>
     <!-- End Staff Cards Card Section-->
-<!-- Twitch iframe -->
- <!-- Add a placeholder for the Twitch embed -->
-    <center><div id="twitch-embed"></div>
 
-    <!-- Load the Twitch embed script -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+<center>
+<div class="box1">
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
 
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 1190,
-        height: 480,
-        channel: "arritia"
-      });
-    </script></center><br><br>
+<div id="arritia">
+
+<script type="text/javascript">
+  var options = {
+    width: 850,
+    height: 480,
+    channel: "arritia",
+  };
+  var player = new Twitch.Player("arritia", options);
+  player.setVolume(0.3);
+
+</script>
+
+<iframe src="https://discordapp.com/widget?id=397909631550357504&theme=dark" width="250" height="480" allowtransparency="true" frameborder="0">
+</iframe>
+
+
+</div>
+</center>
+<br><br>
+
 <!-- End Twitch iframe -->
     <!-- Footer -->
     <footer class="page-footer font-small bg-dark pt-4">
