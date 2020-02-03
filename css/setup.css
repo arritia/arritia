@@ -96,3 +96,15 @@
 .card-img-top {
   height: 50px 50px;
 }
+.jordad {
+  color: #ffe5ff;
+  font-size: 20px;
+}
+.jordad2:hover {
+  color: #ffa9ff;
+  text-decoration: none;
+}
+.a{
+  color: #ffa9ff;
+  text-decoration: none;
+}
