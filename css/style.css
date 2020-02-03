@@ -20,14 +20,14 @@
 /* Website Color Themes */
 /* Main Color */
 .main-f-color {
-  color: rgb(112, 215, 94);
+  color: rgb(255, 200, 255);
   transition: 0.4s;
 }
 /* Color when hovering by the mouse pointer */
 .main-f-color:hover {
-  box-shadow: 0 0 7px 2px rgb(65, 179, 45);   
-  color: rgb(65, 179, 45);   
-  transition: 0.4s; 
+  box-shadow: 0 0 7px 2px rgb(255, 140, 255);   
+  color: rgb(255, 140, 255);   
+  transition: 0.5s; 
 }
 
   /* Every TAG into Html files that uses this class, will
@@ -55,7 +55,7 @@
   get a gray background color */
 
 .backgray {
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(255, 245, 255);
 }
 
 section div {
@@ -80,7 +80,7 @@ section div {
 #testimonials {
   padding: 1% 15%;
   text-align: center;
-  color: white;
+  color: #FFE8FF;
 }
 
 .testemonial-image {
@@ -142,7 +142,7 @@ section div {
 
 .medias:hover 
 {
-   color: gray;
+   color: #FFE8FF;
    text-decoration: none; 
    cursor: pointer;  
 }
@@ -155,3 +155,53 @@ section div {
   text-align: center;
   align-content: center;
   padding-top: 1rem;
+}
+
+.notborder-success {
+  box-shadow: 0 0 5px 2px rgb(255, 140, 255);   
+  color: rgb(0, 0, 0);   
+  transition: 0.5s; 
+  background-color: rgb(255, 245, 255);
+}
+.notborder-successs {
+  animation: waggle 1.5s 1s forwards ease-out;
+  box-shadow: 0 0 5px 3px rgb(255, 140, 255);   
+  color: rgb(255, 100, 255);   
+  background-color: rgb(255, 245, 255);
+  font-size: 20px;
+  max-width: 800px;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+}
+@keyframes blinkingText{
+    0%{ color: transparent; }
+    3%{ color: transparent; }
+    100%{ color: rgb(255, 140, 255); }
+}
+
+@keyframes waggle {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateZ(-20deg) scale(1.2);
+  }
+  60% {
+    transform: rotateZ(25deg) scale(1.4);
+  }
+  67.5% {
+    transform: rotateZ(-15deg) scale(1.4);
+  }
+  75% {
+    transform: rotateZ(15deg) scale(1.4);
+  }
+  82.5% {
+    transform: rotateZ(-12deg) scale(1.4);
+  }
+  85% {
+    transform: rotateZ(0) scale(1.2);
+  }
+  100% {
+    transform: rotateZ(0) scale(1);
+  }
+}

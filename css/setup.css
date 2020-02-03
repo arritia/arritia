@@ -8,7 +8,7 @@
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #FFF5FF;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -43,7 +43,7 @@
 
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: rgb(12, 116, 12);
+  background: rgb(122, 116, 12);
   transition: 0.3s;
 
 }
